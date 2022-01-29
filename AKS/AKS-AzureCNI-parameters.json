@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "aksclust01"
+        },
+        "location": {
+            "value": "southeastasia"
+        },
+        "dnsPrefix": {
+            "value": "aksclust01-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.20.9"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/9bffb227-a01f-4875-bfb9-72923ddbfe56/resourceGroups/AKSFarm/providers/Microsoft.Network/virtualNetworks/AKSFarm-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "workspaceName": {
+            "value": "MyResources-LAW"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/9bffb227-a01f-4875-bfb9-72923ddbfe56/resourcegroups/seasia/providers/microsoft.operationalinsights/workspaces/myresources-law"
+        },
+        "workspaceRegion": {
+            "value": "southeastasia"
+        },
+        "networkPolicy": {
+            "value": "calico"
+        },
+        "acrName": {
+            "value": "CR101"
+        },
+        "acrResourceGroup": {
+            "value": "AKSFarm"
+        }
+    }
+}
